@@ -1,0 +1,11 @@
+#USB File
+on init
+    setprop sys.usb.configfs 1
+    setprop sys.usb.controller "11201000.usb0"
+
+on fs && property:ro.debuggable=0
+
+on early-init
+    mkdir /mnt/product
+    mkdir /mnt/product/nt_log
+    mount ext4 /dev/block/by-name/nt_log /mnt/product/nt_log rw noatime nosuid nodev wait discard,barrier=1
