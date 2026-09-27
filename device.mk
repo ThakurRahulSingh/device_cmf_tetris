@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
 # Filesystem tables for GKI and Recovery
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/fstab_stock.mt6878:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6878 \
-    $(DEVICE_PATH)/fstab_recovery.mt6878:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/etc/recovery.fstab \
+    $(DEVICE_PATH)/fstab.mt6878:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/etc/recovery.fstab \
     $(DEVICE_PATH)/twrp.flags:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/etc/twrp.flags
 
 # fastbootd
