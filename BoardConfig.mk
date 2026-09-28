@@ -187,9 +187,42 @@ TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 
 # UI Offsets for Unified TWRP/OrangeFox Tree
 ifeq ($(FOX_BUILD),1)
-    # It will skip these CMDs while building Ofox
+# Maintainer Information
+OFOX_MAINTAINER := Rahul Singh Bhadoriya
+OFOX_DEVICE := tetris
+
+# GKI / Vendor Boot / A-B Device Setup
+OF_VIRTUAL_AB_PARTITION := true
+OF_AB_DEVICE_WITH_RECOVERY_PARTITION := false
+OF_USE_TWRP_SAR_DETECT := true
+OF_DONT_PATCH_ON_FRESH_INSTALLATION := true
+
+# Magiskboot
+OF_USE_MAGISKBOOT := true
+OF_USE_MAGISKBOOT_FOR_ALL_PATCHES := true
+
+# OrangeFox UI & Layout
+OF_STATUS_H := 95
+OF_SCREEN_H := 2400
+OF_STATUS_INDENT_LEFT := 48
+OF_STATUS_INDENT_RIGHT := 48
+OF_HIDE_NOTCH := 1
+
+OF_OPTIONS_LIST_NUM := 9
+
+# Partition & Storage Tools
+OF_ENABLE_ALL_PARTITION_TOOLS := 1
+OF_ENABLE_LPTOOLS := 1
+OF_USE_LZ4_COMPRESSION := 1
+OF_WIPE_METADATA_AFTER_DATAFORMAT := 1
+OF_LOOP_DEVICE_ERRORS_TO_LOG := 1
+
+# Formatting Fixes
+OF_BIND_MOUNT_SDCARD_ON_FORMAT := 1
+OF_UNBIND_SDCARD_F2FS := 1
+OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
+
 else
-    # It will load this when building TWRP
     TW_Y_OFFSET := 95
     TW_H_OFFSET := -95
 endif
