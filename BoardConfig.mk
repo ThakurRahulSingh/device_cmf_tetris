@@ -188,8 +188,7 @@ TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 # UI Offsets for Unified TWRP/OrangeFox Tree
 ifeq ($(FOX_BUILD),1)
 # Maintainer Information
-OFOX_MAINTAINER := Rahul Singh Bhadoriya
-OFOX_DEVICE := tetris
+OF_MAINTAINER := Rahul Singh Bhadoriya
 
 # GKI / Vendor Boot / A-B Device Setup
 OF_VIRTUAL_AB_PARTITION := true
