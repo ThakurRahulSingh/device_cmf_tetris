@@ -184,8 +184,16 @@ TW_MAX_BRIGHTNESS := 2047
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
-TW_Y_OFFSET := 95
-TW_H_OFFSET := -95
+
+# UI Offsets for Unified TWRP/OrangeFox Tree
+ifeq ($(FOX_BUILD),1)
+    # It will skip these CMDs while building Ofox
+else
+    # It will load this when building TWRP
+    TW_Y_OFFSET := 95
+    TW_H_OFFSET := -95
+endif
+
 
 # include python, for ABX conversion
 TW_INCLUDE_PYTHON := true
