@@ -26,3 +26,7 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.twrp.vendor_boot=true \
     persist.sys.fuse.passthrough.enable=true
+
+# Added TWRP Maintainer Name
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.twrp.maintainer="Rahul Singh Bhadoriya"
