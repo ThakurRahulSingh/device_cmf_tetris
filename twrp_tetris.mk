@@ -14,10 +14,10 @@ $(call inherit-product, device/cmf/tetris/device.mk)
 # Device identifier
 PRODUCT_DEVICE := tetris
 PRODUCT_NAME := twrp_tetris
-PRODUCT_BRAND := CMF
+PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A015
-PRODUCT_MANUFACTURER := CMF
-PRODUCT_RELEASE_NAME := CMF Phone 1
+PRODUCT_MANUFACTURER := Nothing
+PRODUCT_RELEASE_NAME := CMF by Nothing Phone 1
 
 # VINTF Fix
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
